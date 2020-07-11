@@ -1,9 +1,13 @@
 import random
-
-r = random.randint(1, 100)
-count += 1
+start = input('請輸入隨機數字開始值: ')
+end = input('請輸入隨機數字結束值: ')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
+count = 0
 while True:
-    num = input('請輸入1~100隨機一個數字')
+    count += 1
+    num = input('請輸入隨機一個數字: ')
     num = int(num)
     if num == r:
         print('終於猜對了!')
